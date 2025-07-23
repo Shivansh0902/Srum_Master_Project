@@ -170,7 +170,7 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 Created by Shivansh Chadda.
 
 - **GitHub:** [Shivansh0902](https://github.com/Shivansh0902)
-- **Email:** `shivansh@example.com`
+- **Email:** `chaddashivansh12@gmail.com`
 
 For feedback, questions, or collaboration, feel free to reach out!
 
