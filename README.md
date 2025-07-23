@@ -89,7 +89,7 @@ npm -v
    ```bash
    ```
 
-git clone [https://github.com/Shivansh0902/Srum\_Master\_Project.git](https://github.com/Shivansh0902/Srum_Master_Project.git)
+git clone [https://scrum-master-app-shivanh-chaddas-projects.vercel.app](https://scrum-master-app-shivanh-chaddas-projects.vercel.app)
 cd Srum\_Master\_Project/scrum-master-app/scrum-master-app
 
 ````
