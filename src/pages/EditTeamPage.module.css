@@ -1,0 +1,84 @@
+/* src/pages/EditTeamPage.module.css */
+
+/* Card container */
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.container h1 {
+  margin-bottom: 1.5rem;
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Labels */
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* Inputs */
+.input {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--bg-color);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: var(--surface);
+}
+
+/* Button row */
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Primary & cancel buttons */
+.button {
+  flex: 1;
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.cancel {
+  background: var(--border);
+  color: var(--text);
+}
+
+.cancel:hover {
+  background: #CCCCCC;
+}

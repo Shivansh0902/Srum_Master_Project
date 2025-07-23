@@ -1,0 +1,91 @@
+/* src/pages/SprintListPage.module.css */
+
+/* Page card */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Header with Add Sprint */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--text);
+  font-weight: 600;
+}
+.header .button {
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.header .button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Sprint list */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-color);
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+  transition: background var(--transition-fast);
+}
+.item:hover {
+  background: var(--surface);
+}
+
+/* Action buttons */
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.edit,
+.delete {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.edit {
+  background: var(--primary);
+  color: #fff;
+}
+.edit:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+.delete {
+  background: var(--error);
+  color: #fff;
+}
+.delete:hover {
+  background: var(--error-hover);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,134 @@
+/* src/pages/BacklogPage.module.css */
+
+/* Wrapper */
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Header & Add button */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.header h1 {
+  font-size: 2.2rem;
+  color: var(--text);
+  font-weight: 600;
+}
+.header .primaryButton {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.header .primaryButton:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+/* Stats */
+.stats {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* Filters */
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.controls input,
+.controls select {
+  background: var(--bg-color);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  transition: border-color var(--transition-fast);
+}
+.controls input:focus,
+.controls select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Table wrapper for scroll */
+.tableWrapper {
+  overflow-x: auto;
+  background: var(--bg-color);
+  padding: 0.5rem;
+  border-radius: var(--radius);
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.thead th {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  color: var(--text-light);
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--border);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+.tbody tr:nth-child(even) {
+  background: var(--bg-color);
+}
+.tbody tr:nth-child(odd) {
+  background: var(--surface);
+}
+.tbody tr:hover {
+  background: var(--primary-hover);
+  color: #fff;
+}
+.tbody td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.deleteButton,
+.editButton {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+.deleteButton {
+  background: var(--error);
+  color: #fff;
+}
+.deleteButton:hover {
+  background: var(--error-hover);
+  transform: translateY(-1px);
+}
+.editButton {
+  background: var(--primary);
+  color: #fff;
+}
+.editButton:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,153 @@
+/* ----------------------------------
+   Global: Green & White Professional
+   ---------------------------------- */
+
+:root {
+  /* Core palette */
+  --bg-color:        #F9F9F9;  /* very light gray page background */
+  --surface:         #FFFFFF;  /* pure white surfaces */
+  --border:          #E0E0E0;  /* light gray borders */
+  --text:            #2E2E2E;  /* dark charcoal for main text */
+  --text-light:      #555555;  /* medium gray for secondary text */
+
+  /* Accent: Emerald green */
+  --primary:         #2E7D32;  /* bold green */
+  --primary-hover:   #1B5E20;  /* darker on hover */
+  --error:           #C62828;  /* red for danger */
+  --error-hover:     #8E0000;  /* deep red hover */
+
+  /* Geometry & Depth */
+  --radius:          6px;
+  --shadow:          0 2px 6px rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-family:     'Inter', sans-serif;
+  --line-height:     1.6;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-in-out;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color);
+  color: var(--text);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.2rem 0 0.6rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover {
+  color: var(--primary-hover);
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+button:active {
+  transform: translateY(0);
+}
+button.cancel {
+  background: var(--border);
+  color: var(--text);
+}
+button.cancel:hover {
+  background: #CCCCCC;
+}
+
+/* Inputs & Selects */
+input,
+select,
+textarea {
+  width: 100%;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  font: inherit;
+  transition: border-color var(--transition-fast);
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+thead th {
+  background: var(--bg-color);
+  position: sticky;
+  top: 0;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+/* Scrollbar (Webkit) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: var(--radius);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BBBBBB;
+}
