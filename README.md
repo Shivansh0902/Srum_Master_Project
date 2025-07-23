@@ -42,7 +42,7 @@ The **Scrum Master App** is a Single Page Application (SPA) built with React and
 
 Try the live application here:
 
-[https://vercel.com/shivanh-chaddas-projects/scrum-master-app/9ZLHvfbSLGfXeP5x4VsekfY2nc7W](https://scrum-master-msnlzcsg8-shivanh-chaddas-projects.vercel.app)
+[https://scrum-master-app.vercel.app](https://scrum-master-app.vercel.app)
 
 ---
 
